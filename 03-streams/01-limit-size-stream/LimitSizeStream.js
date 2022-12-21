@@ -14,7 +14,7 @@ class LimitSizeStream extends stream.Transform {
     this.usedBytes += chunk.length;
     console.log(this.usedBytes);
     if (this.usedBytes >= this.limit) {
-      throw new LimitExceededError;
+      return LimitExceededError;
     }
     callback(null, chunk);
   }
