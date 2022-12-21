@@ -34,6 +34,10 @@ server.on('request', (req, res) => {
       res.end('internal server error');
     }
   });
+
+  req.on('abort', () => {
+    stream.destroy();
+  });
 });
 
 server.listen(3000, () => {
