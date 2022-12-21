@@ -1,6 +1,6 @@
-james
-richard
-john
-robert
-james
-michael
+James
+Richard
+John
+Robert
+James
+Michael
